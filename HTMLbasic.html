@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en-US"> <!--language-country code comment for search engine and web scraper-->
     <head>
+        <style>
+            img {
+                width: 100%;
+            }
+        </style>
         <title>
             Page Title
         </title>
     </head>
     <body style="background-color: cyan;">
+        <a href="#C4">Jump to Chapter 4</a>
         <h1 style="background-color: powderblue;">this is the Largest <br>heading</h1>
-        <p style="background-color: yellow;">this is a paragraph <br>
-            how about insert more into a paragraph
-
-            this is a test, <small>live server</small>
+        <p style="background-color: yellow;">
+            <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" style="float:left;width: 40px;">
+            this is a paragraph <br>
+            how about insert more into a paragraph <br>
+            this is a test, <small>live server</small> <br>
         </p>
         <p style="font-size: 180%;">this is the <b>second</b> paragraph</p>
         <p><strong>test</strong> the live server</p>
-        <a href="https:www.google.com">google</a> <!--hyperlink in html-->
-        <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" width="104" height="142">
+        <a href="https:www.google.com">google</a> <!--hyperlink in html--> <br>
+        <a href="baidu.com">baidu</a> <!--test link without prefix of http or https--> <br>
+        <a href="www.baidu.com">baidu with www. prefix</a> <br>
+        <a href="https:www.baidu.com">baidu with https prefix</a> <br>
+        <a href="https:www.baidu.com" target="_blank">open baidu in a new window</a> <br>
+        <a href="https:www.baidu.com" target="_self">open baidu in the self window</a> <br>
+        <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" width="104" height="142"> <!--better  not use this method-->
+        <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" style="width:104px ;height: 142px"> 
+        <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" style="width: 50%">
         <!--the alt command is to display something alternatively if the picture is not showed in occurrence of network error-->
         <p style="color: red;">this is a red paragraph</p>
         <hr>
@@ -55,5 +69,25 @@ close to 5 million globally.
             Box 564, Disneyland<br>
             USA
         </address>
+        <h2>Absolute URLs</h2>
+        <p><a href="https://www.w3.org/" target="_blank">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
+        
+        <h2>Relative URLs</h2>
+        <p><a href="/ExternalCSS.html">HTML Images</a></p>
+        <a href="mailto: jananxoxo@gmail.com">send an email</a> <!--this is de facto a no use function--><br>
+        <button onclick="document.location='ExternalCSS.html'">ExternalCSS</button> <br>
+        <button onclick="document.location='https://www.google.com'">Google</button> <br>
+        <a href="https://www.google.com" title="this is going to www.google.com">somethinghere</a> <br>
+        <h3 id="C4">Chapter 4</h3> <br>
+        <a href="https://www.google.com" target="_blank">
+            <img src="https://jananzzzz.github.io/pictures/smile.svg" style="width: 30%;" title="google">
+        </a>
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="workplace" usemap="#workmap">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm" target="_blank">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/workplace.jpg">
+            <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/workplace.jpg">
+        </map>
     </body>
 </html>

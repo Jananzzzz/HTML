@@ -85,9 +85,20 @@ close to 5 million globally.
         </a>
         <img src="https://www.w3schools.com/html/workplace.jpg" alt="workplace" usemap="#workmap">
         <map name="workmap">
-            <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm" target="_blank">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm" target="_blank" onclick="myfunction()">
             <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/workplace.jpg">
-            <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/workplace.jpg">
+            <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/workplace.jpg" onclick="myfunction()">
+            <!-- 
+                shape:
+                rect circle poly default
+                poly defines a polygonal region
+                default is the whole area
+            -->
         </map>
+        <script>
+            function myfunction(){
+                alert("you find an interesting computer!")
+            }
+        </script>
     </body>
 </html>

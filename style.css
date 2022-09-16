@@ -4,17 +4,19 @@ body{
 h1{
     color:blue;
 }
+/*
 p{
     color:red;
     border: 3px solid black;
-    padding: 30px 120px; /* first variable is height, and the second variable is width */
+    padding: 30px 120px; //* first variable is height, and the second variable is width 
     margin: 50px;
-}
+}*/ 
 a :active{
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
 }
+
 a :link, a :visited{
     background-color: #f44336;
     color: white;
@@ -26,3 +28,14 @@ a :link, a :visited{
 a:hover, a:active {
     background-color: red;
   }
+table, th, td {
+    border: 1px solid cyan;
+    border-collapse: collapse;
+}
+th, td {
+    background-color: green;
+}
+.notebook {
+    color: red;
+    font-size: 30px;
+}

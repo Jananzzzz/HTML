@@ -1,18 +1,86 @@
 <!DOCTYPE html>
 <html lang="en-US"> <!--language-country code comment for search engine and web scraper-->
     <head>
-        <style>
-            img {
-                width: 100%;
+          <style>
+            .notebook {
+                color: red;
+                font-size: 30px;
             }
+            </style>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        img {
+            width: 100%;
+        }
+        #testid {
+            color: black;
+            background-color: blue;
+            padding: 50px;
+            text-align: center;
+        }          
         </style>
+        <!-- a class can be used multiple times, but id can be used by one element in the same page for once-->
         <title>
             Page Title
         </title>
+        <link rel="icon"; type="image/x-icon"; href="/image/telegram.ico">
+        <!-- link is the relation between a 'document' and a external resources -->
     </head>
     <body style="background-color: cyan;">
-        <a href="#C4">Jump to Chapter 4</a>
-        <h1 style="background-color: powderblue;">this is the Largest <br>heading</h1>
+        <a href="#C4">Jump to Chapter 4</a> <br>
+        <a href="ExternalCSS.html">testcrosspageid</a>
+        <p id="testid">this is a test of id for class</p>
+        <ul>
+            <li>aboutme</li>
+            <li>linktree</li>
+        </ul>
+        <p>hello world</p>
+        <div>hello world</div>
+        <span>this is a span</span> <!--span is an inline element which not start on a new line-->
+        <!-- div is a big container to include paragraph and headers in it, it is a big block-->
+        <!-- take a look at inline -->
+        <p>hello, my name is <span class="notebook">Janan</span></p>
+        <div>
+                  <p>look at the notes using class note below;<br>
+            <span class="notebook">this is some note.</span>
+        </p>
+        <button onclick="myfunction2()">change the note formula</button>
+        <script>
+            function myfunction2(){
+                alert("this is the second function")
+                var x = document.getElementsByClassName("notebook");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+            }
+        </script>
+
+        </div>
+               <h1 style="background-color: powderblue;">this is the Largest <br>heading</h1>
+        <table>
+            <caption>this is a caption</caption>
+            <tr>
+                <th>111111111111111111111111111111111111111111111111111111111111111111111111</th>
+                <th>1</th>
+                <th>1</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2222222222222222222222222</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+        </table>
+         <p>
+            <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" style="float:left;width: 40px;">
+            this is a paragraph <br>
+            how about insert more into a paragraph <br>
+            this is a test, <small>live server</small> <br>
+        </p>
         <p style="background-color: yellow;">
             <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" style="float:left;width: 40px;">
             this is a paragraph <br>
@@ -42,7 +110,7 @@
             <del>this is a line to be deleted.</del>
             <ins>this is an inserted sentence.</ins>
             aaaa aaaa aaaa
-bbbb bbb bbb
+            bbbb bbb bbb
         </pre> <!--pre is short for preformatted text-->
         <!-- <tagname style="property:value;"> the property is a css property, the value is a css value  -->
         <p>
@@ -51,12 +119,12 @@ bbbb bbb bbb
             superscript<sup>superscript</sup>
         </p>
         <p>here is a quote from wwf's website:</p>
-        <blockquote cite="https://www.worldwildlife.org/who/index.html" style="border: 5px solid white ;">
+        <blockquote cite="https://www.worldwildlife.org/who/index.html" style="border: 5px solid white";">
             For 50 years, WWF has been protecting the future of nature.
             The world's leading conservation organization,
             WWF works in 100 countries and is supported by
             1.2 million members in the United States and
-close to 5 million globally.
+            close to 5 million globally.
         </blockquote>
         <p>my life creed is: <q>become better and better</q></p>
         <p>my short name is <abbr title="Jianan Zhu">Janan</abbr></p>
@@ -72,7 +140,6 @@ close to 5 million globally.
         <h2>Absolute URLs</h2>
         <p><a href="https://www.w3.org/" target="_blank">W3C</a></p>
         <p><a href="https://www.google.com/">Google</a></p>
-        
         <h2>Relative URLs</h2>
         <p><a href="/ExternalCSS.html">HTML Images</a></p>
         <a href="mailto: jananxoxo@gmail.com">send an email</a> <!--this is de facto a no use function--><br>
@@ -80,7 +147,7 @@ close to 5 million globally.
         <button onclick="document.location='https://www.google.com'">Google</button> <br>
         <a href="https://www.google.com" title="this is going to www.google.com">somethinghere</a> <br>
         <h3 id="C4">Chapter 4</h3> <br>
-        <a href="https://www.google.com" target="_blank">
+        <a href="https://www.google.com" target="_blank" onclick="myfunction()">
             <img src="https://jananzzzz.github.io/pictures/smile.svg" style="width: 30%;" title="google">
         </a>
         <img src="https://www.w3schools.com/html/workplace.jpg" alt="workplace" usemap="#workmap">
@@ -100,5 +167,22 @@ close to 5 million globally.
                 alert("you find an interesting computer!")
             }
         </script>
+        <p style="background-image: url('https://jananzzzz.github.io/pictures/smile.svg'); background-size: 100% 100%;">
+            <!--
+                background notations:
+                background-repeat: no repeat
+                background-size: cover
+                background-attachment: fixed
+                background-size: 100% 100%  // stretch the picture to cover all
+            -->
+            this is a paragraph.
+        </p>
+        <picture>
+            <source media="(min-width: 80px)" srcset="https://jananzzzz.github.io/pictures/smile.svg">
+            <source media="(min-width: 60px)" srcset="https://jananzzzz.github.io/pictures/smile.svg">
+            <img src="https://jananzzzz.github.io/pictures/smile.svg" style="width: 150px ;"> 
+            <!--there exists some problems that the source pics can't show in localhost
+                width: auto-->
+        </picture>
     </body>
 </html>

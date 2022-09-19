@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US"> <!--language-country code comment for search engine and web scraper-->
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- always include this line--> 
           <style>
             .notebook {
                 color: red;
@@ -28,8 +29,14 @@
     </head>
     <body style="background-color: cyan;">
         <a href="#C4">Jump to Chapter 4</a> <br>
+        <h style="font-size: 2vw;">Hello, I am Janan.</h> <!--viewPointWidth--> <br>
         <a href="ExternalCSS.html">testcrosspageid</a>
         <p id="testid">this is a test of id for class</p>
+        <iframe title="This is a inserted window" src="ExternalCSS.html" 
+        name="innerpage" style="height:300; border:none;width: 600;"></iframe>
+        <p><a href="ExternalCSS.html" target="inserted">ExternalCSS</a>               </p> 
+        <iframe title="This is a inserted window" name="inserted" style="height: 300;width:600;"></iframe>
+        <!-- script in html is inherently a clientside script, which may cause serious problems-->
         <ul>
             <li>aboutme</li>
             <li>linktree</li>
@@ -97,7 +104,7 @@
         <a href="https:www.baidu.com" target="_self">open baidu in the self window</a> <br>
         <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" width="104" height="142"> <!--better  not use this method-->
         <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" style="width:104px ;height: 142px"> 
-        <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" style="width: 50%">
+        <img src="https://jananzzzz.github.io/pictures/smile.svg" alt="this is a smile" style="width: 50%" >
         <!--the alt command is to display something alternatively if the picture is not showed in occurrence of network error-->
         <p style="color: red;">this is a red paragraph</p>
         <hr>
@@ -150,6 +157,11 @@
         <a href="https://www.google.com" target="_blank" onclick="myfunction()">
             <img src="https://jananzzzz.github.io/pictures/smile.svg" style="width: 30%;" title="google">
         </a>
+        <!--
+            relative path:
+            <img src="../images/picture.jpg" alt="Mountain">
+            ../ means the folder is two layers above the current html folder
+        -->
         <img src="https://www.w3schools.com/html/workplace.jpg" alt="workplace" usemap="#workmap">
         <map name="workmap">
             <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm" target="_blank" onclick="myfunction()">
@@ -179,7 +191,7 @@
         </p>
         <picture>
             <source media="(min-width: 80px)" srcset="https://jananzzzz.github.io/pictures/smile.svg">
-            <source media="(min-width: 60px)" srcset="https://jananzzzz.github.io/pictures/smile.svg">
+            <source media="(min-width: 60px)" srcset="https://jananzzzz.github.io/pictures/smile.svg" media="(max-width:1500px)">
             <img src="https://jananzzzz.github.io/pictures/smile.svg" style="width: 150px ;"> 
             <!--there exists some problems that the source pics can't show in localhost
                 width: auto-->
